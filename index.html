@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pribadi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #4e54c8, #8f94fb);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column; /* Atur agar bisa scroll */
+            align-items: center; /* Memusatkan secara horizontal */
+            height: auto; /* Mengatur tinggi konten */
+        }
+
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px; /* Menambah jarak luar */
+        }
+
+        .profile-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        p {
+            color: #666;
+            margin: 10px 0 20px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .links a {
+            display: flex;
+            align-items: center;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 5px 0;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            width: 200px;
+        }
+
+        .links a i {
+            margin-right: 10px;
+        }
+
+        .links a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Skills Section */
+        .skills-section {
+            text-align: center; /* Memusatkan teks secara horizontal */
+            margin: 20px 0; /* Jarak atas dan bawah */
+        }
+
+        .skills-title {
+            font-size: 2em; /* Ukuran font untuk judul */
+            color: #333; /* Warna teks judul */
+            margin-bottom: 20px; /* Jarak antara judul dan konten */
+        }
+
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .skill-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 250px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .skill-card h3 {
+            font-size: 1.5em;
+            color: #4e54c8;
+            margin-bottom: 10px;
+        }
+
+        .skill-card p {
+            color: #666;
+            font-size: 1em;
+        }
+
+        /* Responsiveness for smaller screens */
+        @media (max-width: 768px) {
+            .skills-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="img/rizky.jpg" alt="Profil Saya" class="profile-image">
+        <h1>RIZKY MAULANA SYAH</h1>
+        <p>Hallo, saya adalah pelajar yang membuat website, menggunakan CSS, HTML dan JavaScript</p>
+
+        <div class="links">
+            <a href="wa.me//+6282181955484" target="_blank"><i class="fab fa-whatsapp"></i> whatsapp</a>
+            <a href="https://www.instagram.com/yk_zir_real112/profilecard/?igsh=OGg4bGhwczNydThp" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://www.youtube.com/@ykzir_ygy" target="_blank"><i class="fab fa-youtube"></i> youtube</a>
+            <a href="https://github.com/rizkymaulanasyah" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+    </div>
+
+    <div class="skills-section">
+        <h2 class="skills-title">My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <h3>HTML</h3>
+                <p>Pengalaman dalam membuat struktur dasar halaman web.</p>
+            </div>
+            <div class="skill-card">
+                <h3>CSS</h3>
+                <p>Keahlian dalam styling dan layout halaman web.</p>
+            </div>
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <p>Memahami pemrograman dasar untuk interaktivitas.</p>
+            </div>
+            <div class="skill-card">
+                <h3>DEVLOPER</h3>
+                <p>Pengalaman dalam membuat web yang elegan.</p>
+            </div>
+            <!-- Tambahkan skill lain sesuai kebutuhan -->
+        </div>
+    </div>
+</body>
+</html>
+
+
+
